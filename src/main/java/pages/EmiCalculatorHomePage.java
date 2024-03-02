@@ -66,8 +66,7 @@ public class EmiCalculatorHomePage {
 	}
 
 	/*
-	 * Action method to get 'Calculated Total Interest Amount' based on user's
-	 * input
+	 * Action method to get 'Calculated Total Interest Amount' based on user's input
 	 */
 	public int getCalculatedTotalInterestAmount() {
 		String totalInterestAmount = DriverFactory.getDriver().findElement(calculatedTotalInterest).getText();
