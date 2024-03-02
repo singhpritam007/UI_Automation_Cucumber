@@ -7,9 +7,12 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-/*
- * Author- Pritam Singh
+/**
+ * 
+ * @author Pritam Singh
+ *
  */
+
 public final class DriverFactory {
 
 	private DriverFactory(){
@@ -19,7 +22,7 @@ public final class DriverFactory {
 	
 	public static void openBrowser(String url){	
 		WebDriverManager.chromedriver().setup();
-		if(Objects.nonNull(threadLocal.get())){
+		if(Objects.isNull(threadLocal.get())){
 			WebDriver driver=new ChromeDriver();
 			driver.manage().window().maximize();
 			driver.get(url);
