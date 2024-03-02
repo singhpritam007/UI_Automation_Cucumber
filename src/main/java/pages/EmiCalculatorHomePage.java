@@ -30,9 +30,10 @@ public class EmiCalculatorHomePage {
 	public void goToHomeLoanTab() {
 		DriverFactory.getDriver().findElement(homeLoanTab).click();
 	}
-	
+
 	/*
 	 * Action methods to enter 'Home Loan Amount'
+	 * 
 	 * @param 'Home Loan Amount'
 	 */
 	public void enterHomeLoanAmount(String homeLoanAmount) {
@@ -41,6 +42,7 @@ public class EmiCalculatorHomePage {
 
 	/*
 	 * Action methods to 'home Loan Interest Rate'
+	 * 
 	 * @param 'Home Loan Interest Rate'
 	 */
 	public void enterInterestRate(String homeLoanInterestRate) {
@@ -65,7 +67,8 @@ public class EmiCalculatorHomePage {
 	}
 
 	/*
-	 * Action methods to get 'Calculated Total Interest Amount' based on user's input
+	 * Action methods to get 'Calculated Total Interest Amount' based on user's
+	 * input
 	 */
 	public int getCalculatedTotalInterestAmount() {
 		String totalInterestAmount = DriverFactory.getDriver().findElement(calculatedTotalInterest).getText();
