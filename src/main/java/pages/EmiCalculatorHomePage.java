@@ -54,7 +54,7 @@ public class EmiCalculatorHomePage{
      */
 	public int getCalculatedLoanEmiPerMonth () {
 		String monthlyEmiAmount = DriverFactory.getDriver().findElement(calculatedLoanEmiPerMonth).getText();
-	    Integer.parseInt(monthlyEmiAmount);
+	    return  Integer.parseInt(monthlyEmiAmount);
 		}
 	
 	 /*
