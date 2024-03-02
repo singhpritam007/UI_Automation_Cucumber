@@ -1,12 +1,11 @@
-/*
- * Author PRASHANT BAURAI
- */
-
 package pages;
 
 import org.openqa.selenium.By;
-
 import factory.DriverFactory;
+
+/*
+ * Author : PRASHANT BAURAI
+ */
 
 public class EmiCalculatorHomePage {
 
@@ -25,14 +24,14 @@ public class EmiCalculatorHomePage {
 	/* start Actions methods */
 
 	/*
-	 * Action methods to go to 'Home Loan TAB'
+	 * Action method to go to 'Home Loan TAB'
 	 */
 	public void goToHomeLoanTab() {
 		DriverFactory.getDriver().findElement(homeLoanTab).click();
 	}
 
 	/*
-	 * Action methods to enter 'Home Loan Amount'
+	 * Action method to enter 'Home Loan Amount'
 	 * 
 	 * @param 'Home Loan Amount'
 	 */
@@ -41,7 +40,7 @@ public class EmiCalculatorHomePage {
 	}
 
 	/*
-	 * Action methods to 'home Loan Interest Rate'
+	 * Action method to enter 'home Loan Interest Rate'
 	 * 
 	 * @param 'Home Loan Interest Rate'
 	 */
@@ -50,7 +49,7 @@ public class EmiCalculatorHomePage {
 	}
 
 	/*
-	 * Action methods to 'enter 'Home Loan Tenure'
+	 * Action method to 'enter 'Home Loan Tenure'
 	 * 
 	 * @param 'Home Loan Tenure'
 	 */
@@ -59,7 +58,7 @@ public class EmiCalculatorHomePage {
 	}
 
 	/*
-	 * Action methods to get 'Calculated Loan EMI Per Month' based on user's input
+	 * Action method to get 'Calculated Loan EMI Per Month' based on user's input
 	 */
 	public int getCalculatedLoanEmiPerMonth() {
 		String monthlyEmiAmount = DriverFactory.getDriver().findElement(calculatedLoanEmiPerMonth).getText();
@@ -67,7 +66,7 @@ public class EmiCalculatorHomePage {
 	}
 
 	/*
-	 * Action methods to get 'Calculated Total Interest Amount' based on user's
+	 * Action method to get 'Calculated Total Interest Amount' based on user's
 	 * input
 	 */
 	public int getCalculatedTotalInterestAmount() {
@@ -76,7 +75,7 @@ public class EmiCalculatorHomePage {
 	}
 
 	/*
-	 * Action methods to get 'Calculated Total Payment' based on user's input
+	 * Action method to get 'Calculated Total Payment' based on user's input
 	 */
 	public int getCalculatedTotalPayment() {
 		String totalInterestAmount = DriverFactory.getDriver().findElement(calculatedTotalPayment).getText();
