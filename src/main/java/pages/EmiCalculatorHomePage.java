@@ -1,13 +1,15 @@
 package pages;
 
 import org.openqa.selenium.By;
+
 import factory.DriverFactory;
+import seleniumHelper.SeleniumHelper;
 
 /*
  * Author : PRASHANT BAURAI
  */
 
-public class EmiCalculatorHomePage {
+public class EmiCalculatorHomePage extends SeleniumHelper{
 
 	/* start variables */
 
@@ -18,10 +20,20 @@ public class EmiCalculatorHomePage {
 	private By calculatedLoanEmiPerMonth = By.xpath("//div[@id='emiamount']");
 	private By calculatedTotalInterest = By.xpath("//div[@id='emitotalinterest']");
 	private By calculatedTotalPayment = By.xpath("//div[@id='emitotalamount']");
+	private By visibleAfterButton = By.id("visibleAfter");
+	private By helloText = By.xpath("//div[@id='finish']/h4");
+	private By startButton = By.xpath("//div[@id='start']/button");
 
 	/* end variables */
 
 	/* start Actions methods */
+
+	/*
+	 * Action method to 'get Text of the WebElement'
+	 */
+	public void getVisibleAfterButtonText() {
+		moveToElement(helloText).build().perform();
+	}
 
 	/*
 	 * Action method to go to 'Home Loan TAB'
