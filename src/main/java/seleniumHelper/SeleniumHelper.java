@@ -88,7 +88,7 @@ public class SeleniumHelper {
 	}
 
 	/**
-	 * Method to accept alert
+	 * Method to accept alert.
 	 * 
 	 * @param by : The locator (By object) used to find the web element.
 	 */
@@ -97,7 +97,7 @@ public class SeleniumHelper {
 	}
 
 	/**
-	 * Method to dismiss alert
+	 * Method to dismiss alert.
 	 * 
 	 * @param by : The locator (By object) used to find the web element.
 	 */
@@ -106,7 +106,7 @@ public class SeleniumHelper {
 	}
 
 	/**
-	 * Method to dismiss alert
+	 * Method to dismiss alert.
 	 * 
 	 * @param by : The locator (By object) used to find the web element.
 	 */
@@ -115,16 +115,16 @@ public class SeleniumHelper {
 	}
 
 	/**
-	 * Method to switch to frame by index
+	 * Method to switch to frame by index.
 	 * 
-	 * @param index : frameIndex The index of the frame to switch to
+	 * @param index : frameIndex The index of the frame to switch to.
 	 */
 	public void switchToFrame(int frameIndex) {
 		DriverFactory.getDriver().switchTo().frame(frameIndex);
 	}
 
 	/**
-	 * Method to switch to frame by name or id
+	 * Method to switch to frame by name or id.
 	 * 
 	 * @param nameOrId
 	 */
