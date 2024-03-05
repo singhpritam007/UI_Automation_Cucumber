@@ -11,6 +11,5 @@ public enum BrowserType {
 	CHROME,
 	FIREFOX,
 	EDGE,
-	SAFARI,
-	NETSPACE
+	SAFARI
 }
