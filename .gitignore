@@ -30,6 +30,9 @@ hs_err_pid*
 # Build directory
 /target/
 
+# Ignore test output directory
+test-output/
+
 # IntelliJ IDEA files
 .idea/
 *.iml
