@@ -1,20 +1,22 @@
-package testCases;
+package steps.appHooks;
 
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
 
 import factory.DriverFactory;
+import io.cucumber.java.After;
+import io.cucumber.java.Before;
 import utils.ConfigReader;
 
-public class BaseTest {
+public class Hooks {
 
-	@BeforeMethod
+	@Before
 	public void setUp(){
+		System.out.println("Browser Opened");
 		DriverFactory.openBrowser(ConfigReader.getProperty("url"));
 	}
 	
-	@AfterMethod
+	@After
 	public void tearDown(){
 		DriverFactory.closeBrowser();
+		System.out.println("Browser Closed");
 	}
 }
